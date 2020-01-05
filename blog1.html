@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- jsn_vintage_free 3.1.1 -->
+<html lang="" dir="ltr">
+<head>
+	<base href="http://www.tezcastudio.com/jorgemonterrubio-blog" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Tezca Studio, Game development, Animation, Jorge Monterrubio, Tezca, Jorge, Monterrubio, Sañudo, Monterrey, Mexico, art, indie, dev, imaginado" />
+	<meta name="rights" content="All rights by Jorge Monterrubio" />
+	<meta name="description" content="Tezca Studio creates various forms of art and animation and provides solutions for entertainment projects." />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Tezca Studio - Blog</title>
+	<link href="/jorgemonterrubio-blog?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/jorgemonterrubio-blog?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/templates/jsn_vintage_free/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/media/jui/css/bootstrap.min.css?2385960d2d92a56a21446764dc301f8a" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-responsive.min.css?2385960d2d92a56a21446764dc301f8a" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-extended.css?2385960d2d92a56a21446764dc301f8a" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/general.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_vintage_free/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_vintage_free/css/colors/brown.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_vintage_free/css/styles/business.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?2385960d2d92a56a21446764dc301f8a" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	#jsn-page {
+		min-width: 90%;
+	}
+	#jsn-pos-topbar,
+	#jsn-header-inner,
+	#jsn-menu-inner1,
+	#jsn-promo-inner1,
+	#jsn-pos-content-top,
+	#jsn-content,
+	#jsn-content-top-over-inner2,
+	#jsn-content-bottom,
+	#jsn-usermodules3,
+	#jsn-footer-inner1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"676bbeee944425a14f7c73718f0f9195","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js" type="text/javascript"></script>
+	<script src="/templates/jsn_vintage_free/js/jsn_template.js" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?2385960d2d92a56a21446764dc301f8a" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});
+jQuery(function($){ $(".dropdown-toggle").dropdown(); });
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_vintage_free_",
+					templatePath			: "/templates/jsn_vintage_free",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 0,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: [],
+					mobileMenuEffect		: ""
+				});
+			
+					window.addEvent("domready", JSNUtils.setDesktopOnMobile);
+				
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+</head>
+<body id="jsn-master" class="jsn-textstyle-business jsn-color-brown jsn-direction-ltr jsn-desktop jsn-joomla-30  jsn-com-content jsn-view-category jsn-layout-blog jsn-itemid-149">
+		<div id="jsn-page">
+			<div id="jsn-header">
+			<div id="jsn-header-inner">
+				<div id="jsn-headercenter">
+								</div>
+			</div>
+			<div class="clearbreak"></div>
+		</div>
+		<div id="jsn-body">
+			<div id="menu-wrapper">
+			<div id="menu-wrapper-inner">
+			<div id="jsn-logo">
+							<div id="jsn-pos-logo">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<a href="/jorgemonterrubio"><img src="/images/banners/headers/heading1.jpg" alt="JorgeMonterrubio" style="margin: 0;" /></a></fieldset></div><div class="clearbreak"></div></div></div></div>
+				</div>
+
+						</div>
+					<div id="jsn-menu">
+				<div id="jsn-menu-inner"><div id="jsn-menu-inner1">
+								<div id="jsn-mainmenu">
+									<div id="jsn-pos-mainmenu">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<ul class="menu-mainmenu">
+<li  class="first"><a  href="/jorgemonterrubio-about" >
+	<span>
+		About	</span>
+</a></li><li  class="current active"><a class="current" href="/jorgemonterrubio-blog" >
+	<span>
+		Blog	</span>
+</a></li><li  class="parent"><a  href="/jorgemonterrubio-work" >
+	<span>
+		Work	</span>
+</a><ul><li  class="first"><a  href="/jorgemonterrubio-work/3d-models-and-textures" >
+	<span>
+		3D models and textures	</span>
+</a></li><li ><a  href="/jorgemonterrubio-work/character-design-i" >
+	<span>
+		Character Design I	</span>
+</a></li><li ><a  href="/jorgemonterrubio-work/character-design-ii" >
+	<span>
+		Character Design II	</span>
+</a></li><li ><a  href="/jorgemonterrubio-work/coding-and-programming" >
+	<span>
+		Coding and Programming	</span>
+</a></li><li  class="last"><a  href="/jorgemonterrubio-work/personal-sketches-and-studies" >
+	<span>
+		Personal Sketches and Studies	</span>
+</a></li></ul></li><li  class="last"><a  href="/jorgemonterrubio-contact" >
+	<span>
+		Contact	</span>
+</a></li></ul><div class="clearbreak"></div></div></div></div>
+					</div>
+								</div>
+				</div>
+					<div class="clearbreak"></div>
+				</div>
+				</div></div>
+			</div>
+						<div id="jsn-content" class="jsn-hasright ">
+				<div id="jsn-content_inner"><div id="jsn-content_inner1"><div id="jsn-content_inner2"><div id="jsn-content_inner3"><div id="jsn-content_inner4"><div id="jsn-content_inner5"><div id="jsn-content_inner6"><div id="jsn-content_inner7" class="row-fluid">
+					
+					<div id="jsn-maincontent" class="span9 order1  row-fluid"><div id="jsn-maincontent_inner">
+								<div id="jsn-centercol" class="span12 order1 ">
+							<div id="jsn-centercol_inner">
+										<div id="jsn-mainbody-content" class=" jsn-hasmainbodytop jsn-hasmainbody">
+											<div id="jsn-pos-mainbody-top" class="jsn-modulescontainer jsn-horizontallayout jsn-modulescontainer1 row-fluid">
+										<div class=" jsn-modulecontainer span12"><div class="jsn-modulecontainer_inner"><div><div><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p style="text-align: center;"><span style="font-size: 14pt;"><strong><span style="font-size: 18pt;">Jorge's blog</span><br /></strong></span></p></div><div class="clearbreak"></div></div></div></div></div></div>
+									</div>
+											<div id="jsn-mainbody">
+										<div id="system-message-container">
+	</div>
+
+											<div class="blog" itemscope itemtype="http://schema.org/Blog">
+		
+		
+		
+		
+		
+		
+				
+		
+																							<div class="items-row cols-1 row-0 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									#5minpokemonrenders - a fiery challenge							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img style="border: 3px solid #000000; margin: 2px;" src="/images/Blog/5minho-oh.png" alt="5minhooh" width="711" height="500" /></p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/5minpokemonrenders-a-fiery-challenge" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-1 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									Comics from the past							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/comic.jpg" alt="comic" width="700" height="700" style="border: 3px solid #000000; margin: 2px;" /></p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/comics-from-the-past" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-2 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									Alebrijes on a Friday night							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/alebrijes.jpg" alt="alebrijes" width="700" height="290" style="border: 3px solid #000000; margin: 2px;" /></p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/alebrijes-on-a-friday-night" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-3 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									An Aztec emperor in Belgium							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/MoctezumaWatercolor.jpg" alt="Moctezuma" width="500" height="500" style="border: 3px solid #000000; margin: 2px;" /></p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/an-aztec-emperor-in-belgium" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-4 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									Motion capture for 3D animations							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p><img src="/images/Blog/MotionCapture.jpg" alt="MotionCapture" width="1000" height="563" style="border: 3px solid #000000; display: block; margin: 2px auto;" /></p>
+<p style="text-align: center;">MoCap para Video Juegos... Lo mejor del mundo... me siento como niño en disneylandia!</p>
+<p style="text-align: center;">Gracias, Tanooki, por la invitación!</p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/motion-capture-for-3d-animations" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-5 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									Some RISKY days at work							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/Risk.jpg" alt="Risk" width="800" height="597" style="border: 3px solid #000000; display: block; margin: 2px auto;" /><img src="/images/Blog/Whiteboard.jpg" alt="Whiteboard" width="468" height="350" style="border: 3px solid #000000; margin: 2px;" /><img src="/images/Blog/Whiteboard3.jpg" alt="Whiteboard3" width="332" height="350" style="border: 3px solid #000000; margin: 2px;" />
+<img src="/images/Blog/Whiteboard2.jpg" alt="Whiteboard2" width="800" height="598" style="border: 3px solid #000000; margin: 2px;" /></p>
+<p>&nbsp;</p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/a-risky-day-at-work" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-6 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									A peek at Pixar							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/Pixar3.jpg" alt="Pixar3" width="600" height="450" style="border: 3px solid #000000; display: block; margin: 2px auto;" /> <img src="/images/Blog/Pixar2.jpg" alt="Pixar2" width="400" height="300" style="border: 3px solid #000000; margin: 2px;" /><img src="/images/Blog/Pixar1.jpg" alt="Pixar1" width="400" height="300" style="border: 3px solid #000000; margin: 2px;" /></p>
+<p>&nbsp;</p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/a-peek-at-pixar" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+																									<div class="items-row cols-1 row-7 row-fluid clearfix">
+								<div class="span12">
+					<div class="item column-1"
+						itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+							
+	<!-- Override Layout title-->	
+	<div class="page-header">
+
+					<h2 itemprop="headline">
+									Back to paint							</h2>
+		
+							</div>
+		
+<!-- Override Layout title-->			
+		
+
+
+
+ <p style="text-align: center;"><img src="/images/Blog/Paint.jpg" alt="Paint" width="400" height="600" style="border: 3px solid #000000; margin: 2px;" /><img src="/images/Blog/santa.jpg" alt="santa" width="407" height="600" style="border: 3px solid #000000; margin: 2px;" /></p>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/jorgemonterrubio-blog/back-to-paint" content=""/>
+
+
+
+					</div>
+					<!-- end item -->
+									</div><!-- end span -->
+									</div><!-- end row -->
+									
+		
+					</div>
+
+
+									</div>
+										</div>
+									</div>
+						</div>
+        					</div></div>
+							<div id="jsn-rightsidecontent" class="span3 order2 ">
+						<div id="jsn-rightsidecontent_inner">
+							<div id="jsn-pos-right">
+								<div class="solid-2 jsn-icon-folder jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div><div><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">2018</span></h3><div class="jsn-modulecontent"><ul class="category-modulesolid-2 jsn-icon-folder mod-list">
+						<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/comics-from-the-past">Comics from the past</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/alebrijes-on-a-friday-night">Alebrijes on a Friday night</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+			</ul>
+<div class="clearbreak"></div></div></div></div></div></div><div class="solid-2 jsn-icon-folder jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div><div><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">2017</span></h3><div class="jsn-modulecontent"><ul class="category-modulesolid-2 jsn-icon-folder mod-list">
+						<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/an-aztec-emperor-in-belgium">An Aztec emperor in Belgium</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/motion-capture-for-3d-animations">Motion capture for 3D animations</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+			</ul>
+<div class="clearbreak"></div></div></div></div></div></div><div class="solid-2 jsn-icon-folder jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div><div><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">2016</span></h3><div class="jsn-modulecontent"><ul class="category-modulesolid-2 jsn-icon-folder mod-list">
+						<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/a-risky-day-at-work">Some RISKY days at work</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/a-peek-at-pixar">A peek at Pixar</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-blog/back-to-paint">Back to paint</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+			</ul>
+<div class="clearbreak"></div></div></div></div></div></div><div class=" solid-2
+ 
+ jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div><div><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Jorge's work</span></h3><div class="jsn-modulecontent"><ul class="category-module solid-2
+ 
+ mod-list">
+						<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-work/3d-models-and-textures">3D models and textures</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-work/character-design-i">Character Design I</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-work/character-design-ii">Character Design II</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-work/coding-and-programming">Coding and Programming</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+					<li>
+									<a class="mod-articles-category-title " href="/jorgemonterrubio-work/personal-sketches-and-studies">Personal Sketches and Studies</a>
+				
+				
+				
+				
+				
+				
+				
+							</li>
+			</ul>
+<div class="clearbreak"></div></div></div></div></div></div>
+							</div>
+						</div>
+					</div>
+						</div></div></div></div></div></div></div></div>
+			</div>
+				</div>
+					<div id="jsn-footer"><div id="jsn-footer-inner"><div id="jsn-footer-inner1">
+				<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer2 row-fluid">
+								<div id="jsn-pos-footer" class="span8">
+						<div id="jsn-pos-breadcrumbs" class="">
+<ul class="breadcrumb ">
+<li><span>Blog</span></li></ul>	
+</div>
+					</div>
+								<div id="jsn-pos-bottom" class="span4">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p><span style="color: #f5bf32;"><strong><a href="#" style="color: #f5bf32;" onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#f5bf32';" onmouseout="this.style.color='#f5bf32';" onmouseover="this.style.color='#ffffff';">Back to top</a></strong></span></p></div><div class="clearbreak"></div></div></div></div>
+					</div>
+							</div>
+			</div></div></div>
+			</div>
+	
+
+</body>
+</html>
