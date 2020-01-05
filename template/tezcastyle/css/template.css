@@ -1,0 +1,364 @@
+
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+font-size: 115%;
+
+}
+
+
+/* ====aanpassingen in body worden niet toegepast... daarom font-size naar bovenba verzet ====== */
+body {
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	background: rgba(255, 248, 228);
+	background-image: url("../graphics/bg_content.png");
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+/*p, pre, blockquote, form, dl, ul, ol, fieldset, address, table {
+	padding: 0;
+	margin: 10px 0;
+}
+p:first-child,
+blockquote:first-child,
+form:first-child,
+dl:first-child,
+ul:first-child,
+ol:first-child,
+fieldset:first-child,
+address:first-child,
+table:first-child {
+	margin-top: 5px;
+}
+p:last-child,
+blockquote:last-child,
+form:last-child,
+dl:last-child,
+ul:last-child,
+ol:last-child,
+fieldset:last-child,
+address:last-child,
+table:last-child {
+	margin-bottom: 5px;
+}
+fieldset {
+	padding: 10px;
+}
+.jsn-joomla-30 fieldset {
+	padding: 0;
+	margin: 0;
+}
+small {
+	font-size: .85em;
+}
+sup {
+	bottom: 0.3em;
+	font-size: .8em;
+	position: relative;
+	vertical-align: baseline;
+}
+sup em {
+	color: red;
+}
+acronym, abbr {
+	cursor: help;
+	letter-spacing: 1px;
+	border-bottom: 1px dashed;
+}
+pre {
+	padding: 1em;
+	background: #FFFFD5;
+	border-left: 5px solid #404040;
+	font-family: "Courier New",Courier,monospace;
+}
+blockquote {
+	color: #404040;
+	min-height: 45px;
+	font-style: italic;
+	padding-left: 60px;
+	background: url(../images/icons/icon-text-blockquote.png) no-repeat top left;
+}
+blockquote p {
+	font-size: 1em;
+	line-height: inherit;
+}*/
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+/* =====Nele: h1 en h2: groter (1.4 naar 1.8em)en bruine kleur toegevoegd (van h4); door gebruik van submenus voor work, is die titel h1 terwijl in blog h2, daarom gelijke stijl gegeven ========= */
+/* =====Nele: h3 en h4: groter (1.3 naar 1.6em)========= */
+h1 {
+	font-size: 1.8em;
+	color: #3c0404;
+}
+h2 {
+	font-size: 1.8em;
+	color: #3c0404;
+}
+h3 {
+	color: #251313;
+	font-size: 1.3em;
+}
+h4 {
+	color: #3c0404;
+	font-size: 1.3em;
+}
+h5, h6 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+h5 {
+	color: #5A8406;
+}
+h6 {
+	color: #663300;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0;
+	font-weight: normal;
+}
+
+
+
+hr {
+	border: 1px solid white;
+}
+
+
+
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	padding: 0;
+	margin: 0.3em 0 0.3em 1.6em;
+}
+ol li {
+	padding: 0;
+	margin: 0.3em 0 0.3em 2em;
+}
+
+
+
+
+
+/* ======= started from brown.css =========*/
+
+
+/*textarea {
+    background: rgba(255, 248, 228);
+    border: 1px solid #CABD9A;
+}
+img.image-border {
+    background-color: #FDF6E3;
+    border: 1px solid #D6CBAE;
+}
+img.image-border:hover {
+	background-color: #F6EDD6;
+}
+
+*/
+.clearbreak {
+	clear: both;
+}
+
+
+/* ======= clearfix hack to clear floats automatically =========*/
+.clearfix:before, 
+.clearfix:after {
+	content:""; 
+	display: table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.clearfix {
+	zoom:1;
+}
+
+
+
+/* ======= menu style =========*/
+
+
+
+#tezca-menu-wrapper {	
+	color: #f2f2f2;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding: 0 0 6px;
+	position: relative;
+	z-index: 99;
+	background-image: url("../graphics/bg-menu-inner.png");
+}
+
+.tezca-logo {
+	width: 100%;
+	margin: 0; 
+	padding: 0;
+}
+
+.tezca-logo img{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+
+#tezca-menu {
+	
+	position: relative;
+	
+/*	background-repeat: repeat-x;
+	background-position: left bottom;
+	height: auto;
+	padding-bottom: 40px;*/
+
+	background-image: url("../graphics/bg-menu.png");	
+	padding: 0;
+
+
+}
+/* ======= site navigation =========*/
+
+.site-nav {
+	margin-top: 0px;
+	margin: auto;
+	width:450px;
+}
+
+.site-nav ul {
+	margin: 0;
+
+/*	margin-left: auto;
+	margin-right: auto;	*/
+}
+
+.site-nav li {
+	list-style: none; 
+	float: left;
+	margin: 5px;
+	padding: 10px 12px;
+}
+
+.site-nav a {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	display: block;
+	color: #fff;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10 px 20 px
+
+}
+
+.site-nav a:hover{
+	color: #f5bf32;
+	/*background-color: pink;*/
+
+}
+
+	/* ============================= footer ===============================*/
+footer {
+	background-image: url("../graphics/bg_footer.png");	
+	background-position: left top;
+	padding: 0 10px 15px;
+}
+
+.pos-breadcrumb {
+		max-width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+.pos-breadcrumbs-left {
+	text-align: left;
+	width: 50%;
+	float:left;
+}
+.pos-breadcrumbs-right {
+	text-align: right;
+	width: 50%;
+	float:left;
+}
+
+.pos-breadcrumbs-right a {
+/*	color: #f5bf32;
+	onmouseover="this.style.color='#ffffff';
+	onmouseout="this.style.color='#f5bf32';
+	onmouseout="this.style.color='#f5bf32';
+	onmouseover="this.style.color='#ffffff';*/
+	/*color: #f5bf32;" onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#f5bf32';" onmouseout="this.style.color='#f5bf32';" onmouseover="this.style.color='#ffffff';*/
+}
+
+/*#menu-wrapper,
+#jsn-menu.jsn-menu-sticky {
+	background-image: url(../../images/colors/brown/bg-menu-inner.png);
+}
+#menu-wrapper-inner,
+#jsn-menu.jsn-menu-sticky #jsn-menu-inner {
+	background-image: url(../../images/colors/brown/bg-menu.png);*/
+
+	/* ============================= main-area and aside ===============================*/
+
+.container {
+		max-width: 95%;
+		min-height: calc(100vh - 12vw - 138px);
+		margin-left: auto;
+		margin-right: auto;
+}
+
+.content-area {
+/*	border-top: 3px solid black;
+	border-bottom: 3px solid black;*/
+}
+
+.main-area {
+	width: 66%;
+	float:left;
+	padding-left: 10px;
+	/*border-left: 1px solid grey;*/
+	background-image: url("../graphics/line_leftside.png");	
+	background-repeat: repeat-y;
+}
+
+.sidebar-left {
+	width: 33%;
+	float:left;
+}
+
+
+.sidebar-left img {
+	display: block;
+	width: 80%;
+	max-width: 300px;
+	margin: 20px 10px 20px auto;
+	border: 3px solid black;
+}
+
+
+.title {
+	text-align: center;
+	}
+
+.title-line {
+	background-image: url("../graphics/bg_pattern.png");	
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: block;
+	height: 10px;
+}

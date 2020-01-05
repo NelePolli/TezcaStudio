@@ -1,0 +1,74 @@
+
+/*Nele new animation from gif*/
+@keyframes NPCWALK {
+	0% {transform: translateX(-70%);}
+	100% {transform: translateX(800%);}
+
+	}
+
+.NPC {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../images/NPC.gif"); /*images in template */
+	animation: NPCWALK 5s infinite;
+	animation-timing-function: linear;
+    
+}
+
+/*Nele new animation from gif*/
+@keyframes NPC2WALK {
+	0% {transform: translateX(-100%);}
+	100% {transform: translateX(800%);}
+
+	}
+
+.NPC2 {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../images/NPC2.gif"); /*images in template */
+	animation: NPC2WALK 6.8s infinite;
+	animation-timing-function: linear;
+}
+
+
+
+/*Nele new animation from gif*/
+@keyframes NPC3WALK {
+	0% {transform: translateX(-150%);}
+	100% {transform: translateX(800%);}
+
+	}
+
+.NPC3 {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../images/NPC3.gif"); /*images in template */
+	animation: NPC3WALK 6s infinite;
+	animation-timing-function: linear;
+}
+
+/*sloth gif is a bit smaller than ugly green guy, this makes everything more symmetrical*/
+img.nelesloth {
+    padding: 13px 40px;
+}
+
+/*keep them at same line in phone*/
+@media only screen and (max-width: 450px){
+   img.nelesloth {
+    padding: 13px 5px;
+    }
+}
+
+
+
+
+
+
+
+
