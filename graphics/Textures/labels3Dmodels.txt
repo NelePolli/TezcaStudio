@@ -1,0 +1,3 @@
+﻿Aztecs.jpg||Aztecs and Spaniard for a personal project. High polys and bakes mostly by <strong><a href="https://www.artstation.com/gabriel_salazar" target="_blank" >Gabriel Salazar</a></strong>. Character design, texturing, and render by Jorge Monterrubio.
+Armor1.png||3D Armor for Asset Pack. (Work in progress)
+Armor2.png||3D Armor for Asset Pack. 
