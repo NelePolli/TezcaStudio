@@ -385,12 +385,12 @@ footer {
 		border: 3px solid black;
 	}
 }
-
-@media screen and (max-width: 1000px) {	
+/*
+@media screen and (max-width: 600px) {	
 	.mid-screen img {
 		height: 30vh;
 	}
-}
+}*/
 
 
 
@@ -454,7 +454,7 @@ footer {
 	}
 
 /*eliminate div-class*/
-@media screen and (max-width: 480px) {		
+@media screen and (max-width: 800px) {		
 	/*reuse this class for all elements you don't want*/
 	.wide-version {				
 		display: none;
