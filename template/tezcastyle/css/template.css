@@ -316,30 +316,71 @@ footer {
 	/* ============================= main-area and aside ===============================*/
 
 .container {
-		max-width: 95%;
-		min-height: calc(100vh - 12vw - 138px);
-		margin-left: auto;
-		margin-right: auto;
+	max-width: 96%;
+	min-height: calc(100vh - 12vw - 138px);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content-area {
+	margin-left: auto;
+	margin-right: auto;
 /*	border-top: 3px solid black;
 	border-bottom: 3px solid black;*/
 }
 
 .main-area {
 	width: 66%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	float:left;
 	padding-left: 10px;
 	/*border-left: 1px solid grey;*/
-	background-image: url("../graphics/line_leftside.png");	
-	background-repeat: repeat-y;
+
+	background-image: url("../graphics/line_leftside.png"), url("../graphics/line_leftside.png");
+ 	background-position: left top, right top;
+ 	background-repeat: repeat-y;
 }
 
 .sidebar-left {
-	width: 33%;
+	width: 30%;
 	float:left;
 }
+
+.mid-screen {
+	display: none;
+}
+
+/*only use 1 column*/
+@media screen and (max-width: 1000px) {		
+	.main-area {
+		width: 100%;
+		background-image: none;
+		float: none;
+
+/*		padding-right: 0;*/
+	}
+	.sidebar-left {
+		display: none;
+	}
+	.mid-screen {
+		display: inline-block;
+		text-align: center;
+	}
+	.mid-screen img {
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+
+		height: 60vh;
+/*		margin: 20px 10px 20px auto;*/
+		border: 3px solid black;
+}
+}
+
+
+
 
 
 .sidebar-left img {
@@ -349,6 +390,17 @@ footer {
 	margin: 20px 10px 20px auto;
 	border: 3px solid black;
 }
+
+.main-area p {
+	padding-left:10px;
+}
+
+.main-area table {
+	padding-left:15px;
+	/*padding-right:10px;*/
+}
+
+
 
 
 .title {
@@ -362,3 +414,46 @@ footer {
 	display: block;
 	height: 10px;
 }
+
+@media only screen and (max-width: 450px){
+    {
+    padding: 13px 5px;
+    }
+}
+
+
+	/* ============================= small screen ===============================*/
+
+
+
+/*eliminate extra space left/right*/
+/*@media screen and (max-width: 480px) { 			
+	.container {
+		padding-left: 20px;
+		padding-right: 20 px; 
+		}	
+	.content-area{
+		paddding-top: 20px;
+		}
+	}
+*/
+
+.small-version {				
+	display: none;
+	}
+
+/*eliminate div-class*/
+@media screen and (max-width: 480px) {		
+	/*reuse this class for all elements you don't want*/
+	.wide-version {				
+		display: none;
+	}
+	.small-version {
+		display: inline; 
+	}
+}	
+/*@media screen and (min-width: 480px) {		
+	.small-version {				
+		display: none;
+	}
+}*/	
