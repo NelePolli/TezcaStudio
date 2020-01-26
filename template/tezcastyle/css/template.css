@@ -343,6 +343,7 @@ footer {
 	margin-right: auto;
 	float:left;
 	padding-left: 10px;
+	padding-right: 10px;
 	/*border-left: 1px solid grey;*/
 
 	background-image: url("../graphics/line_leftside.png"), url("../graphics/line_leftside.png");
@@ -384,8 +385,10 @@ footer {
 /*		height: 80vh;*/
 /*		margin: 20px 10px 20px auto;*/
 		border: 3px solid black;
-	}
+		box-sizing: border-box;
 }
+	}
+
 /*
 @media screen and (max-width: 600px) {	
 	.mid-screen img {
@@ -401,6 +404,7 @@ footer {
 	max-width: 300px;
 	margin: 20px 10px 20px auto;
 	border: 3px solid black;
+	box-sizing: border-box;
 }
 
 .main-area p {
