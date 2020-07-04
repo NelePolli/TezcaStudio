@@ -132,7 +132,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:active {
 	text-decoration: none;
@@ -271,6 +271,28 @@ img.image-border:hover {
 	/*background-color: pink;*/
 
 }
+
+
+/* ======= site navigation: submenus =========*/
+
+a.submenu span {
+	color: #251313;
+	font-size: 1.3em;
+}
+
+a.submenu span:hover {
+	color: #0b378a;
+}
+
+a.submenu img {
+  display: inline-block;    
+  vertical-align: middle;
+  width: 300px;
+  border: 3px solid #000000;
+  margin: 5px;  
+  margin-right: 20px;
+}
+
 
 	/* ============================= footer ===============================*/
 footer {
@@ -473,3 +495,74 @@ footer {
 		display: none;
 	}
 }*/	
+
+
+	/* ============================= WORK ===============================*/
+
+div.work p {
+	text-align: center
+}
+
+div.work img {
+	max-width:1000px;
+	border: 3px solid #000000; 
+	margin: 2px;
+}
+
+
+	/* ============================= ANIMATIONS ===============================*/
+
+
+/*Nele new animation from gif*/
+@keyframes NPCWALK {
+	0% {transform: translateX(-400%);}
+	100% {transform: translateX(650%);}
+
+	}
+
+.NPC {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../graphics/client_work_alebrije/gifs/npc.gif"); /*images in template */
+	animation: NPCWALK 5s infinite;
+	animation-timing-function: linear;
+    
+}
+
+/*Nele new animation from gif*/
+@keyframes NPC2WALK {
+	0% {transform: translateX(-450%);}
+	100% {transform: translateX(600%);}
+
+	}
+
+.NPC2 {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../images/NPC2.gif"); /*images in template */
+	animation: NPC2WALK 6.8s infinite;
+	animation-timing-function: linear;
+}
+
+
+
+/*Nele new animation from gif*/
+@keyframes NPC3WALK {
+	0% {transform: translateX(-500%);}
+	100% {transform: translateX(600%);}
+
+	}
+
+.NPC3 {
+	width: 134px;
+	height:134px;
+	display: inline-block;
+	margin: auto;
+	background-image: url("../images/NPC3.gif"); /*images in template */
+	animation: NPC3WALK 6s infinite;
+	animation-timing-function: linear;
+}
