@@ -296,8 +296,50 @@ img.image-border:hover {
 
 }
 
+/* ======= site navigation: submenus on top =========*/
 
-/* ======= site navigation: submenus =========*/
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  top:55px;
+  background-color: #2b2020;
+
+  z-index: 1;
+}
+
+.subnav-content li {
+	float: none;
+
+}
+
+.subnav-content a {
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= site navigation: submenus in page =========*/
 
 a.submenu span {
 	color: #251313;
