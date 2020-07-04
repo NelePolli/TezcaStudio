@@ -141,6 +141,10 @@ img {
   border: 3px solid #000000;
 }
 
+img.no-border {
+  border: none;
+}
+
 p.title {
 	font-weight: bold;
 	margin-bottom: 0;
