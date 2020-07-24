@@ -1,0 +1,14 @@
+
+
+
+
+Redirect 301 /jorgemonterrubio-work/3d_models_and_textures https://www.tezcastudio.com/work/3d_models_and_textures.html
+Redirect 301 /jorgemonterrubio-work/character_design_i https://www.tezcastudio.com/work/character_design_1.html
+Redirect 301 /jorgemonterrubio-work/character_design_ii https://www.tezcastudio.com/work/character_design_2.html
+Redirect 301 /jorgemonterrubio-work/coding-and-programming.html https://www.tezcastudio.com/work/coding_and_programming.html
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule .* $0.html
