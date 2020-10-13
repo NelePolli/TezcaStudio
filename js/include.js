@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -28,19 +25,3 @@ function includeHTML() {
     }
   }
 };
-</script>
-
-<body>
-<div w3-include-html="header.html"></div> 
-<p>A</p>
-<div w3-include-html="test4.html"></div> 
-<p>B</p>
-
-<script>
-includeHTML();
-</script>
-
-<p>C</p>
-
-</body>
-</html>
