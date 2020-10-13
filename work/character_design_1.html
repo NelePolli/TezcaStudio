@@ -12,56 +12,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=0.8">
 
 	<link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
+
+	<script type="text/javascript" src="js/include.js"></script>
 </head>
-
-
 
 
 <body>
 
+
 <!-- MENU -->
-<div id="tezca-menu-wrapper">
-	<div class="tezca-logo"> <!-- 	<div class="jsn-mod-custom"> -->
-			<a href="https://www.tezcastudio.com">
-				<img class="wide-version" src="../graphics/banners/heading.jpg" alt="Jorge Monterrubio">
-				<img class="small-version" src="../graphics/banners/headingSmall.jpg" alt="Jorge Monterrubio">		
-			</a>
-	</div>
-<!-- 	<div class="clearbreak"></div> -->
-	<div id="tezca-menu">
-		<nav class="site-nav">
-			<ul class="clearfix">
-				<li><a href="../about">About</a></li>
-				<li><a href="../blog">Blog</a></li>
-				 
-				<div class="subnav">
-					<li><a class="subnavbtn" href="../work">Work</a></li>
-					<div class="subnav-content">
-						<li><a href="https://www.tezcastudio.com/work/3d_models_and_textures">3D Models and Textures</a></li>
-						<li><a href="https://www.tezcastudio.com/work/character_design_1">Character Design I</a></li>
-						<li><a href="https://www.tezcastudio.com/work/character_design_2">Character Design II</a></li>
-						<li><a href="https://www.tezcastudio.com/work/coding_and_programming">Coding and Programming</a></li>
-						<li><a href="https://www.tezcastudio.com/work/personal_sketches_and_studies">Personal Sketches and Studies</a></li>							
-					</div>	
-				</div>
+<div w3-include-html="header.html"></div> 
 
-
-				<li><a href="../contact">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- CONTENT -->
+<!-- MAIN AREA -->
 <div class="container">
 <div class="content-area">
 	<h1 class="title">Jorge's Work</h1>
@@ -169,30 +131,11 @@
 
 
 <!-- FOOTER -->
-<footer>
-	<div class="pos-breadcrumb clearfix">
-			<div class="pos-breadcrumbs-left">
-				<div class="breadcrumb">
-					<p>
-						<span style="color: #f5bf32;"><strong><a href="https://www.tezcastudio.com" style="color: #f5bf32;" onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#f5bf32';" onmouseout="this.style.color='#f5bf32';" onmouseover="this.style.color='#ffffff';">Home</a></strong></span>
+<div w3-include-html="footer.html"></div> 
 
-						<img class="no-border" src="../template/tezcastyle/graphics/arrow_right.png" style="margin-bottom: -3px">
-
-						<span style="color: #f5bf32;"><strong><a href="../work" style="color: #f5bf32;" onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#f5bf32';" onmouseout="this.style.color='#f5bf32';" onmouseover="this.style.color='#ffffff';">Work</a></strong></span>
-
-						<img class="no-border" src="../template/tezcastyle/graphics/arrow_right.png" style="margin-bottom: -3px">
-
-						<span style="color: #f5bf32;"><strong>Character Design I</strong></span>						
-
-					</p>
-				</div>	
-			</div>
-
-			<div class="pos-breadcrumbs-right">
-				<p><span style="color: #f5bf32;"><strong><a href="#" style="color: #f5bf32;" onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#f5bf32';" onmouseout="this.style.color='#f5bf32';" onmouseover="this.style.color='#ffffff';">Back to top</a></strong></span></p>
-			</div>				
-	</div>		
-</footer>
+<script>
+includeHTML();
+</script>
 
 </body>
 </html>
