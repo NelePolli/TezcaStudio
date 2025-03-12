@@ -2,10 +2,10 @@
 
 
 
-Redirect 301 /jorgemonterrubio-work/3d_models_and_textures https://www.tezcastudio.com/work/3d_models_and_textures.html
-Redirect 301 /jorgemonterrubio-work/character_design_i https://www.tezcastudio.com/work/character_design_1.html
-Redirect 301 /jorgemonterrubio-work/character_design_ii https://www.tezcastudio.com/work/character_design_2.html
-Redirect 301 /jorgemonterrubio-work/coding-and-programming.html https://www.tezcastudio.com/work/coding_and_programming.html
+Redirect 301 /jorgemonterrubio-work/3d_models_and_textures https://nelepolli.github.io/TezcaStudio/work/3d_models_and_textures.html
+Redirect 301 /jorgemonterrubio-work/character_design_i https://nelepolli.github.io/TezcaStudio/work/character_design_1.html
+Redirect 301 /jorgemonterrubio-work/character_design_ii https://nelepolli.github.io/TezcaStudio/work/character_design_2.html
+Redirect 301 /jorgemonterrubio-work/coding-and-programming.html https://nelepolli.github.io/TezcaStudio/work/coding_and_programming.html
 
 RewriteEngine on
 
